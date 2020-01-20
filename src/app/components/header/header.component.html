@@ -1,0 +1,14 @@
+<header class="header">
+    <img src="assets/images/crk.png" alt="Logo Creatikos" class="logo">
+    <span class="lista-clientes">Lista de clientes</span>
+    <nav class="nav">
+        <fa-icon [icon]='_faBars' class="icon-menu" id="icon-menu" (click)='hideShowMenu()'></fa-icon>
+        <ul class="ul-menu" [ngClass]="_stateMenu">
+            <li class="li-menu"><a class="link-menu" routerLink="/cliente/nuevo">Nuevo</a></li>
+            <li class="li-menu">
+                <input class="input-search" type="text" placeholder="Buscar" autofocus>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!--button><fa-icon [icon]='_faSearch'></fa-icon></button-- [@hideState]="_stateMenu"-->

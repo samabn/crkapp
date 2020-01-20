@@ -1,0 +1,16 @@
+<main>
+    <div class="div-title">
+        <p class="p-client">Datos cliente</p>
+    </div>
+    <form (ngSubmit)="save(formulario)" #formulario="ngForm" class="form">
+        <input type="text" class="input-field" [(ngModel)]="cliente.nombre" name="nombre" placeholder="Nombre" required>
+        <input type="text" class="input-field" [(ngModel)]="cliente.direccion" name="direccion" placeholder="Dirección">
+        <input type="text" class="input-field" [(ngModel)]="cliente.celular" name="celular" placeholder="Celular" required>
+        <input type="text" class="input-field" [(ngModel)]="cliente.telefono" name="telefono" placeholder="Teléfono">
+        <input type="text" class="input-field" [(ngModel)]="cliente.correo" name="correo" placeholder="Correo">
+        <button class="btn-save"><fa-icon [icon]="_faSave"></fa-icon> Guardar</button>
+        <!--button class="btn-save btn-back" routerLink="/clientes">
+            <fa-icon [icon]="_faArrowLeft"></fa-icon> Regresar
+        </button-->
+    </form>
+</main>

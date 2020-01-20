@@ -1,0 +1,38 @@
+<app-header></app-header>
+<!--div class="card" *ngFor="let cliente of clientes">
+    <span class="span-card">{{ cliente.nombre }}</span>
+    <span class="span-card">{{ cliente.direccion }}</span>
+    <span class="span-card">{{ cliente.celular }}</span>
+    <span class="span-card">{{ cliente.telefono }}</span>
+    <span class="span-card">{{ cliente.correo }}</span>
+    <div class="actions">
+        <button class="btn-icon" (click)="editClient(cliente.id)">
+            <fa-icon [icon]="_faPencil" class="icon-actions icon-pencil"></fa-icon>
+        </button>
+        <button class="btn-icon" (click)="deleteClient(cliente.id)">
+            <fa-icon [icon]="_faTrash" class="icon-actions icon-trash"></fa-icon>
+        </button>
+    </div>
+</div-->
+<main>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Dirección</th>
+        <th scope="col">Celular</th>
+        <th scope="col">Telefono</th>
+        <th scope="col">Correo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cliente of clientes">
+        <td data-label="Nombre"><span class="td-data"><a routerLink="cliente/{{ cliente.id }}">{{ cliente.nombre }}</a></span></td>
+        <td data-label="Dirección"><span class="td-data">{{ cliente.direccion }}</span></td>
+        <td data-label="Celular"><span class="td-data">{{ cliente.celular }}</span></td>
+        <td data-label="Telefono"><span class="td-data">{{ cliente.telefono }}</span></td>
+        <td data-label="Correo"><span class="td-data">{{ cliente.correo }}</span></td>
+      </tr>
+    </tbody>
+  </table>
+</main>

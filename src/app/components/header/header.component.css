@@ -1,0 +1,60 @@
+.header {
+    position: relative;
+    margin: .5em .5em 1.5em .5em;
+    height: 3rem;
+}
+
+.logo {
+    width: 50px;
+}
+
+.lista-clientes {
+    position: absolute;
+    top: .5rem;
+    left: 4.5rem;
+    font-size: 2rem;
+}
+
+.icon-menu {
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+    font-size: 2.5rem;
+}
+
+.nav {
+    margin-left: -1rem;
+    padding: .3em;
+    font-size: 2rem;
+}
+
+.ul-menu {
+    margin: 0;
+    padding: 0 0 0 10px;
+    transition: 600ms ease-in;
+    transform: translateX(-400px);
+    z-index: 100;
+    border: 1px solid gainsboro;
+    background: #fff;
+}
+
+.li-menu {
+    padding: 5px 0;
+}
+
+.input-search {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid darkgray;
+    outline: none;
+    background: transparent;
+}
+
+.show-menu {
+    transform: translateX(0);
+}
+
+.hide-menu {
+    transform: translateX(-400px);
+}
+
